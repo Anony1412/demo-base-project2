@@ -18,7 +18,6 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
     }
 
     override fun initViewModel() {
-
         searchViewModel.findUserByUsername("hello")
     }
 

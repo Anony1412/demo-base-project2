@@ -5,14 +5,14 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
-class iFlickApp: Application() {
+class FlickrApp: Application() {
 
     override fun onCreate() {
         super.onCreate()
 
         startKoin {
             androidLogger()
-            androidContext(this@iFlickApp)
+            androidContext(this@FlickrApp)
             modules (listOf(apiModule, sourceModule, viewModelModule))
         }
     }
